@@ -2,12 +2,12 @@ import React from 'react';
 import { View, Text, StyleSheet, Button } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
-
-
-const SplashScreen = () => {
+const SplashScreen = ({ navigation }) => {
     return (
         <View style={styles.container}>
-            <TouchableOpacity style = {styles.button}>
+            <TouchableOpacity 
+                onPress = {() => navigation.navigate('Home')}
+                style = {styles.button}>
                 <Text>Take me to my stash.</Text>
             </TouchableOpacity>
             
@@ -30,7 +30,9 @@ const styles = StyleSheet.create({
         backgroundColor: '#9F95A3',
         color: '#3D3B46',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        height: 100,
+        width: '100%'
     },
 
     signUp: {
@@ -43,4 +45,4 @@ const styles = StyleSheet.create({
 
 });
 
-export default SplashScreen
+export default SplashScreen;
