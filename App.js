@@ -4,7 +4,7 @@ import HomeScreen from './src/screens/HomeScreen';
 import CounterScreen from './src/screens/CounterScreen';
 import StashScreen from './src/screens/StashScreen';
 import ShoppingListScreen from './src/screens/ShoppingListScreen';
-//import ProjectsScreen from './src/screens/ProjectsScreen';
+import ProjectsScreen from './src/screens/ProjectsScreen';
 
 const navigator = createStackNavigator(
   {
@@ -12,7 +12,7 @@ const navigator = createStackNavigator(
     Home: HomeScreen,
     Counter: CounterScreen,
     Stash: StashScreen,
-    //Projects: ProjectsScreen,
+    Projects: ProjectsScreen,
     ShoppingList: ShoppingListScreen
   },
   {
