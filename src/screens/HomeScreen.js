@@ -10,6 +10,7 @@ const HomeScreen = ({navigation}) => {
 
             <Button 
                 title="Stash"
+                onPress = {() => navigation.navigate('Stash')}
             />
             <Button 
                 title="Counter"
@@ -17,11 +18,12 @@ const HomeScreen = ({navigation}) => {
             />
             <Button
                 title="Projects"
+                onPress = {() => navigation.navigate('Projects')}
             />
             <Button 
                 title="Shopping List"
+                onPress = {() => navigation.navigate('ShoppingList')}
             />
-
         </View>
     )
 };
