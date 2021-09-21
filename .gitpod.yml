@@ -1,12 +1,8 @@
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - name: Terminal1
-    before: echo 'pre-init'
-    init: echo 'init script' # runs during prebuild
+  - name: Terminal1  
+    init: echo 'init-ing' # runs during prebuild
     command: echo 'start script'
-  - name: TerminalCow
-    init: echo 'init-ing'
-    command: cowsay hello world
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
